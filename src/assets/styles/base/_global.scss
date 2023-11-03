@@ -1,0 +1,22 @@
+body {
+	min-height: 100dvh;
+	color: black;
+
+	main {
+		min-height: 100dvh;
+	}
+}
+
+button {
+	cursor: pointer;
+}
+
+a {
+	&:hover {
+		transition: all 200ms ease-in-out;
+		color: black;
+		text-shadow:
+			-1px 1px 1px #fff,
+			1px -1px 1px #fff;
+	}
+}

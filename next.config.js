@@ -13,6 +13,15 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/iniciar-sesion",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;

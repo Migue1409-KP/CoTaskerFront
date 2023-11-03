@@ -1,3 +1,55 @@
 /**
  * Basic typography style for copy text
 **/
+
+body {
+	font-family: var(--font-outfit);
+}
+
+:is(p, a, label, i, b, blockquote, span, li, input, button, div) {
+	font-size: 1em;
+}
+
+// Tipo de fuente para titulos
+// :is(h1, h2, h3, h4, h5, h6) {
+// 	font-family: $font-inter;
+// }
+
+b,
+strong {
+	font-weight: 500;
+}
+
+h1 {
+	color: #000;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 2.25em;
+	line-height: normal;
+	font-family: $font-amatic-sc;
+}
+
+h2 {
+	color: #000;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 1.25rem;
+	line-height: normal;
+	font-family: $font-outfit;
+}
+
+h3 {
+	font-weight: 600; // semi bold
+	font-size: 1em;
+	font-family: $font-outfit;
+}
+
+h4 {
+	font-weight: 500; // medium
+	font-size: 1.6em;
+}
+
+h5 {
+	font-weight: 500; // medium
+	font-size: 1.4em;
+}

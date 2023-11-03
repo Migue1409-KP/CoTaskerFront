@@ -1,7 +1,7 @@
 {
-  "name": "cotasker",
-  "version": "0.1.0",
-  "private": true,
+	"name": "cotasker",
+	"version": "0.0.0",
+	"private": true,
 	"scripts": {
 		"build": "next build",
 		"dev": "next dev",
@@ -9,27 +9,34 @@
 		"prepare": "husky install",
 		"start": "next start"
 	},
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "13.5.6"
-  },
-  "devDependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^4.2.0",
-    "prettier-plugin-css-order": "^2.0.0",
-    "husky": "^8.0.3",
-		"standard": "^17.1.0",
+	"dependencies": {
+		"axios": "^1.6.0",
+		"classnames": "^2.3.2",
+		"js-cookie": "^3.0.5",
+		"ldrs": "^1.0.1",
+		"next": "13.5.6",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"sass": "^1.69.5",
+		"sonner": "^1.1.0",
+		"zod": "^3.22.4"
+	},
+	"devDependencies": {
+		"@trivago/prettier-plugin-sort-imports": "^4.2.1",
+		"@types/js-cookie": "^3.0.5",
+		"@types/node": "20.8.10",
+		"@types/react": "18.2.34",
+		"@types/react-dom": "18.2.14",
+		"@typescript-eslint/eslint-plugin": "^6.9.1",
+		"@typescript-eslint/parser": "^6.9.1",
+		"eslint": "^8.52.0",
+		"eslint-config-next": "13.5.6",
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-plugin-hexagonal-architecture": "^1.0.3",
-    "typescript": "^5",
+		"husky": "^8.0.3",
 		"prettier": "^3.0.3",
-    "eslint": "^8",
-    "eslint-config-next": "13.5.6",
-    "@types/js-cookie": "^3.0.4",
-		"@types/node": "20.6.3",
-		"@types/react": "18.2.22",
-		"@types/react-dom": "18.2.7",
-		"@typescript-eslint/eslint-plugin": "^6.7.2",
-		"@typescript-eslint/parser": "^6.7.2"
-  }
+		"prettier-plugin-css-order": "^2.0.1",
+		"standard": "^17.1.0",
+		"typescript": "^5.2.2"
+	}
 }
