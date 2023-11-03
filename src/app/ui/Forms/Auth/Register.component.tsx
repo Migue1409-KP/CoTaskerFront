@@ -50,11 +50,11 @@ export function RegisterForm() {
 		<form onSubmit={handleSubmit} className={cn(formState.error ? 'error' : null)}>
 			<h3>Ingrese su informacion</h3>
 			<div className='personal-info'>
-				<input id='name' name='name' type='text' placeholder='Nombre' autoComplete='given-name' />
-				<input id='lastname' name='lastname' type='text' placeholder='Apellido' autoComplete='family-name' />
+				<input id='name' name='name' type='text' placeholder='Nombre' autoComplete='given-name' required />
+				<input id='lastname' name='lastname' type='text' placeholder='Apellido' autoComplete='family-name' required />
 			</div>
-			<input type='email' placeholder='Correo Electronico' autoComplete='email' name='email' />
-			<input type='password' placeholder='Contraseña' autoComplete='new-password' name='password' />
+			<input type='email' placeholder='Correo Electronico' autoComplete='email' name='email' required />
+			<input type='password' placeholder='Contraseña' autoComplete='new-password' name='password' required />
 			<button type='submit' className={cn(formState.loading ? 'loading' : '')}>
 				{formState.loading ? <l-metronome size='24' speed='2' color='white'></l-metronome> : 'Registrarme'}
 			</button>
